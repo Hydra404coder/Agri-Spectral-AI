@@ -1,86 +1,74 @@
-Agri-Spectral-AI
+# Agri-Spectral-AI
 
 AgriSpectral AI is a software-only fruit quality detection system that emulates AS7265x spectral sensors using open hyperspectral datasets to predict apple freshness, spoilage risk, and pesticide residues.
 
-🚀 Features
+## About
 
-Emulates an 18-band AS7265x sensor (wavelengths ~410-940 nm) from mock/hyperspectral data
+AgriSpectral AI leverages spectral analysis to assess the quality of apples, providing insights into:
 
-Freshness Detection via dry-matter percentage analysis
+- **Freshness**: Determining the ripeness and shelf life of apples.
+- **Spoilage Risk**: Identifying early signs of decay or spoilage.
+- **Pesticide Residues**: Detecting traces of pesticides to ensure safety.
 
-Spoilage Risk Assessment for early degradation detection (Low / Medium / High)
+By emulating AS7265x spectral sensors, the system offers a cost-effective solution for quality assessment without the need for specialized hardware.
 
-Pesticide Residue Classification (Pure / Fungicide / Insecticide)
+## Features
 
-Interactive visualizations: spectral charts, PCA, scatter plots, histograms
+- Software-Only Detection: Eliminates the need for physical spectral sensors.
+- Open Hyperspectral Datasets: Utilizes publicly available datasets for training and validation.
+- Predictive Analysis: Provides accurate predictions on apple quality metrics.
+- User-Friendly Interface: Designed for ease of use, even for those with minimal technical expertise.
 
-Professionally styled dashboard built using Streamlit + Plotly + Scikit-learn
+## Installation
 
-Mock sample mode and real-time simulated analytics
+To set up Agri-Spectral-AI locally:
 
-📁 Repository Contents
-File / Folder	Description
-app.py	Main Streamlit application with dashboard logic and visualizations
-requirements.txt	Python package dependencies needed to run the dashboard
-README.md	This file
-💻 Setup & Installation
-
-Clone the repository
+1. Clone the repository:
 
 git clone https://github.com/Hydra404coder/Agri-Spectral-AI.git
 cd Agri-Spectral-AI
 
+markdown
+Copy code
 
-Create a virtual environment (optional but recommended)
-
-python -m venv venv
-source venv/bin/activate      # On Windows: venv\Scripts\activate
-
-
-Install dependencies
+2. Install the required dependencies:
 
 pip install -r requirements.txt
 
+markdown
+Copy code
 
-Run the dashboard
+3. Run the application:
 
-streamlit run app.py
+python app.py
 
-🛠 Usage
+markdown
+Copy code
 
-Upon startup, the dashboard will generate mock data and display interactive KPIs for freshness, spoilage risk, and pesticide status.
+## Usage
 
-Use the sidebar to select sample threshold, pick sample, and toggle advanced analytics.
+Upon running the application, users can upload apple spectral data, and the system will provide predictions on:
 
-Explore spectral lines, PCA visualization, and distributions for insights.
+- Freshness level
+- Spoilage risk
+- Pesticide residue presence
 
-🧪 Tech Stack
+## Contributing
 
-Python
+Contributions are welcome! To contribute:
 
-Streamlit — for the web dashboard interface
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
 
-Plotly — interactive charts and plots
+## License
 
-Scikit-learn — regression & analysis (e.g. Ridge, PCA)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-NumPy / Pandas — data manipulation
+## Acknowledgments
 
-✅ Contribution
-
-This repository is currently a demo / prototype. Ideas for extension:
-
-Add real hyperspectral data and sensor calibration
-
-Incorporate gauge‐style visual components & animations
-
-Allow multi-sample or time series comparison
-
-Add export (PDF / CSV) and report generation
-
-Improve responsiveness and design polish
-
-📜 License & Contact
-
-Feel free to use / modify.
-Created by Hydra404coder.
+- AS7265x Spectral Sensors: For providing the baseline for emulation.
+- Open Hyperspectral Datasets: For enabling the development and testing of the system.
+- Contributors: For their valuable input and improvements.
